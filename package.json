@@ -4,17 +4,17 @@
   "type": "module",
   "dependencies": {
     "@adobe/lit-mobx": "2.0.0",
-    "@hilla/form": "2.3.0-alpha10",
-    "@hilla/frontend": "2.3.0-alpha10",
-    "@hilla/generator-typescript-cli": "2.3.0-alpha10",
-    "@hilla/generator-typescript-core": "2.3.0-alpha10",
-    "@hilla/generator-typescript-plugin-backbone": "2.3.0-alpha10",
-    "@hilla/generator-typescript-plugin-barrel": "2.3.0-alpha10",
-    "@hilla/generator-typescript-plugin-client": "2.3.0-alpha10",
-    "@hilla/generator-typescript-plugin-model": "2.3.0-alpha10",
-    "@hilla/generator-typescript-plugin-push": "2.3.0-alpha10",
-    "@hilla/generator-typescript-plugin-subtypes": "2.3.0-alpha10",
-    "@hilla/generator-typescript-utils": "2.3.0-alpha10",
+    "@hilla/form": "2.3.0-beta1",
+    "@hilla/frontend": "2.3.0-beta1",
+    "@hilla/generator-typescript-cli": "2.3.0-beta1",
+    "@hilla/generator-typescript-core": "2.3.0-beta1",
+    "@hilla/generator-typescript-plugin-backbone": "2.3.0-beta1",
+    "@hilla/generator-typescript-plugin-barrel": "2.3.0-beta1",
+    "@hilla/generator-typescript-plugin-client": "2.3.0-beta1",
+    "@hilla/generator-typescript-plugin-model": "2.3.0-beta1",
+    "@hilla/generator-typescript-plugin-push": "2.3.0-beta1",
+    "@hilla/generator-typescript-plugin-subtypes": "2.3.0-beta1",
+    "@hilla/generator-typescript-utils": "2.3.0-beta1",
     "@polymer/polymer": "3.5.1",
     "@vaadin/a11y-base": "24.2.0-rc1",
     "@vaadin/accordion": "24.2.0-rc1",
@@ -92,9 +92,9 @@
     "lit": "2.8.0",
     "mobile-drag-drop": "2.3.0-rc.2",
     "mobx": "^6.3.5",
+    "paper-range-slider": "^3.0.0",
     "pick-dom-element": "^0.2.2",
-    "proj4": "2.9.0",
-    "paper-range-slider": "^3.0.0"
+    "proj4": "2.9.0"
   },
   "devDependencies": {
     "@rollup/plugin-replace": "5.0.2",
@@ -116,17 +116,17 @@
   "vaadin": {
     "dependencies": {
       "@adobe/lit-mobx": "2.0.0",
-      "@hilla/form": "2.3.0-alpha10",
-      "@hilla/frontend": "2.3.0-alpha10",
-      "@hilla/generator-typescript-cli": "2.3.0-alpha10",
-      "@hilla/generator-typescript-core": "2.3.0-alpha10",
-      "@hilla/generator-typescript-plugin-backbone": "2.3.0-alpha10",
-      "@hilla/generator-typescript-plugin-barrel": "2.3.0-alpha10",
-      "@hilla/generator-typescript-plugin-client": "2.3.0-alpha10",
-      "@hilla/generator-typescript-plugin-model": "2.3.0-alpha10",
-      "@hilla/generator-typescript-plugin-push": "2.3.0-alpha10",
-      "@hilla/generator-typescript-plugin-subtypes": "2.3.0-alpha10",
-      "@hilla/generator-typescript-utils": "2.3.0-alpha10",
+      "@hilla/form": "2.3.0-beta1",
+      "@hilla/frontend": "2.3.0-beta1",
+      "@hilla/generator-typescript-cli": "2.3.0-beta1",
+      "@hilla/generator-typescript-core": "2.3.0-beta1",
+      "@hilla/generator-typescript-plugin-backbone": "2.3.0-beta1",
+      "@hilla/generator-typescript-plugin-barrel": "2.3.0-beta1",
+      "@hilla/generator-typescript-plugin-client": "2.3.0-beta1",
+      "@hilla/generator-typescript-plugin-model": "2.3.0-beta1",
+      "@hilla/generator-typescript-plugin-push": "2.3.0-beta1",
+      "@hilla/generator-typescript-plugin-subtypes": "2.3.0-beta1",
+      "@hilla/generator-typescript-utils": "2.3.0-beta1",
       "@polymer/polymer": "3.5.1",
       "@vaadin/a11y-base": "24.2.0-rc1",
       "@vaadin/accordion": "24.2.0-rc1",
@@ -222,7 +222,7 @@
       "workbox-core": "7.0.0",
       "workbox-precaching": "7.0.0"
     },
-    "hash": "942a72eddca8fda4401f30255d9f793e4b2d7aceabc2bb2e5a7716ddada6cb55"
+    "hash": "86304eef2493949c1f4c41548df7e0516b1cf695b67069ec96f17ecf17123f2d"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",
@@ -315,6 +315,7 @@
     "@hilla/generator-typescript-plugin-backbone": "$@hilla/generator-typescript-plugin-backbone",
     "@hilla/generator-typescript-cli": "$@hilla/generator-typescript-cli",
     "chatgpt": "$chatgpt",
-    "pick-dom-element": "$pick-dom-element"
+    "pick-dom-element": "$pick-dom-element",
+    "paper-range-slider": "$paper-range-slider"
   }
 }
