@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <!-- Project from https://start.vaadin.com/project/e9be4028-2228-4045-b865-31e3d0f6db1e -->
     <groupId>com.example.application</groupId>
@@ -11,7 +12,7 @@
 
     <properties>
         <java.version>17</java.version>
-        <vaadin.version>24.2.0.beta2</vaadin.version>
+        <vaadin.version>24.2.0.rc2</vaadin.version>
         <hilla.version>2.3.0.alpha10</hilla.version>
     </properties>
 
@@ -57,7 +58,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-        
+
             <dependency>
                 <groupId>dev.hilla</groupId>
                 <artifactId>hilla-bom</artifactId>
@@ -147,20 +148,20 @@
                     </execution>
                 </executions>
             </plugin>
-        <plugin>
-<groupId>dev.hilla    </groupId>
-<artifactId>hilla-maven-plugin    </artifactId>
-<version>${hilla.version}    </version>
-<executions>
-<execution>
-<goals>
-<goal>prepare-frontend    </goal>
-</goals>
-</execution>
-</executions>
-</plugin>
+            <plugin>
+                <groupId>dev.hilla</groupId>
+                <artifactId>hilla-maven-plugin</artifactId>
+                <version>${hilla.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-frontend</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
 
-</plugins>
+        </plugins>
     </build>
 
     <profiles>

@@ -1,0 +1,71 @@
+{
+  "vaadin-text-field": [
+    {
+      "name": "value",
+      "type": "string",
+      "description": "The value of the input."
+    },
+    {
+      "name": "placeholder",
+      "type": "string",
+      "description": "A hint to the user of what can be entered in the control."
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "The label for the text field."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "The name attribute of the native input field."
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "description": "If true, the user cannot interact with this element."
+    },
+    {
+      "name": "readonly",
+      "type": "boolean",
+      "description": "If true, the user cannot modify the value of the widget."
+    },
+    {
+      "name": "invalid",
+      "type": "boolean",
+      "description": "If true, the element is currently invalid."
+    },
+    {
+      "name": "required",
+      "type": "boolean",
+      "description": "If true, the user must fill in a value before submitting a form."
+    }
+  ],
+  "vaadin-button": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "description": "Specifies whether the button is disabled or not"
+    },
+    {
+      "name": "theme",
+      "type": "String",
+      "description": "Defines the visual theme for the button"
+    },
+    {
+      "name": "aria-label",
+      "type": "String",
+      "description": "A text alternative used for accessibility"
+    },
+    {
+      "name": "autofocus",
+      "type": "Boolean",
+      "description": "Specifies that the button should be focused automatically when the page loads"
+    },
+    {
+      "name": "tabindex",
+      "type": "Number",
+      "description": "Specifies the tabbing order of the button"
+    }
+  ]
+}

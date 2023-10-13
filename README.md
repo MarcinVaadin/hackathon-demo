@@ -1,46 +1,61 @@
-# Custom project from Hilla
+# Component Helper - Hackathon 24.2
 
-This project can be used as a starting point to create your own Hilla application with Spring Boot.
-It contains all the necessary configuration and some placeholder files to get you started.
+This project uses dev-tools-plugin feature together with ChatGPT to get information about available component attributes and allow simple modifications (string and booleans only).
+
+Supports all HTML elements. Examples for Vaadin components, native HTML components and 3rd party Web Components below.
+
+ChatGPT is optional as response has been cached for few components, see details below.
+
+## ChatGPT API key (optional)
+
+Set your ChatGPT API key within `./frontend/component-helper/chatgpt-utils.ts` as `const apiKey = 'sk-xxxxxxxxxx';`
 
 ## Running the application
 
-The project is a standard Maven project. To run it from the command line,
-type `mvnw` (Windows), or `./mvnw` (Mac & Linux), then open
-http://localhost:8080 in your browser.
+As usual: `mvn`.
 
-You can also import the project to your IDE of choice as you would with any
-Maven project.
+## Component Helper
 
-## Deploying to Production
+### Picking cached components
 
-To create a production build, call `mvnw clean package -Pproduction` (Windows),
-or `./mvnw clean package -Pproduction` (Mac & Linux).
-This will build a JAR file with all the dependencies and front-end resources,
-ready to be deployed. The file can be found in the `target` folder after the build completes.
+Use `Pick component` to select component, start with vaadin-text-field.
 
-Once the JAR file is built, you can run it using
-`java -jar target/myapp-1.0-SNAPSHOT.jar` (NOTE, replace
-`myapp-1.0-SNAPSHOT.jar` with the name of your jar).
+<img src="images/picking.png">
 
-## Project structure
+vaadin-text-field and vaadin-button have cached ChatGPT response so you will see available attributes, inputs and descriptions immediately:
 
-<table style="width:100%; text-align: left;">
-  <tr><th>Directory</th><th>Description</th></tr>
-  <tr><td><code>frontend/</code></td><td>Client-side source directory</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>index.html</code></td><td>HTML template</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>index.ts</code></td><td>Frontend entrypoint, contains the client-side routing setup using <a href="https://hilla.dev/docs/routing/router">Hilla Router</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>main-layout.ts</code></td><td>Main layout Web Component, contains the navigation menu, uses <a href="https://vaadin.com/docs/latest/ds/components/app-layout">App Layout</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>views/</code></td><td>UI views Web Components (TypeScript)</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>themes/</code></td><td>Custom  
-CSS styles</td></tr>
-  <tr><td><code>src/main/java/&lt;groupId&gt;/</code></td><td>Server-side 
-source directory, contains the server-side Java views</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>Application.java</code></td><td>Server entry-point</td></tr>
-</table>
+<img src="images/text-field.png">
 
-## Useful links
+Modify values and see instant preview:
 
-- Read the documentation at [hilla.dev/docs](https://hilla.dev/docs/).
-- Ask questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/hilla) or join our [Discord channel](https://discord.gg/MYFq5RTbBn).
-- Report issues, create pull requests in [GitHub](https://github.com/vaadin/hilla).
+<img src="images/text-field-values.png">
+
+### Picking non-cached Vaadin components
+
+After picking any other component, ChatGPT request will be send. You will see loading indicator:
+
+<img src="images/loading.png">
+
+In browser console logs you will processing and parsing info:
+
+<img src="images/logs.png">
+
+After that processed fields will be rendered automatically:
+
+<img src="images/password-field.png">
+
+### Non Vaadin components
+
+It is possible to pick ANY component but results can be totally unpredictable ;-) Few examples:
+
+#### H1
+
+<img src="images/h1.png">
+
+#### input
+
+<img src="images/input.png">
+
+#### paper-range-slider
+
+<img src="images/paper-slider.png">

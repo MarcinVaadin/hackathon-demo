@@ -6,6 +6,7 @@ import { HelloWorldService } from 'Frontend/generated/endpoints.js';
 import { html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { View } from '../../views/view.js';
+import 'paper-range-slider';
 
 @customElement('hello-world-view')
 export class HelloWorldView extends View {
@@ -20,6 +21,7 @@ export class HelloWorldView extends View {
     return html`
       <vaadin-text-field label="Your name" @value-changed=${this.nameChanged}></vaadin-text-field>
       <vaadin-button @click=${this.sayHello}>Say hello</vaadin-button>
+      <paper-range-slider></paper-range-slider>
     `;
   }
 
